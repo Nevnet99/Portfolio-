@@ -11,9 +11,13 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    font-size: 40%;
+    font-size: 30%;
 
     ${({ theme }) => theme.minBp("tablet")} {
+        font-size: 55%;
+    }
+
+    ${({ theme }) => theme.minBp("desktop")} {
         font-size: 16px;
     }
   }
@@ -21,7 +25,16 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme: { colors } }) => colors.background};
     color: ${({ theme: { colors } }) => colors.text};
-    padding: 0 ${({ theme: { spacing } }) => spacing(100)};
+    padding: 0 ${({ theme: { spacing } }) => spacing(20)};
+
+    ${({ theme }) => theme.minBp("tablet")} {
+      padding: 0 ${({ theme: { spacing } }) => spacing(100)};
+    }
+
+    ${({ theme }) => theme.minBp("desktop")} {
+      padding: 0 ${({ theme: { spacing } }) => spacing(120)};
+    }
+
   }
 
 

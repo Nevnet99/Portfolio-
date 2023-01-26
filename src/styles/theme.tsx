@@ -55,6 +55,8 @@ const theme: Theme = {
         font-size: ${theme.fontSize(180)};
         font-weight: 900;
         font-family: 'Satoshi', sans-serif;
+        letter-spacing: 0.05rem;
+        line-height: 1;
       `,
       "secondary-title": `
         font-size: ${theme.fontSize(128)};
@@ -65,6 +67,8 @@ const theme: Theme = {
         font-size: ${theme.fontSize(98)};
         font-weight: 900;
         font-family: 'Satoshi Black', sans-serif;
+        letter-spacing: 0.2rem;
+        line-height: 1;
       `,
       "body-title": `
         font-size: ${theme.fontSize(64)};
