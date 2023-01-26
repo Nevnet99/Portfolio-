@@ -11,11 +11,11 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    font-size: 35%;
+    font-size: 40%;
 
-     ${({ theme }) => theme.minBp("tablet")} {
-        font-size: 62.5%;
-      }
+    ${({ theme }) => theme.minBp("tablet")} {
+        font-size: 16px;
+    }
   }
   
   body {
