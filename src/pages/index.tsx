@@ -1,6 +1,7 @@
+import AnimateIntoView from "@animations/AnimateIntoView/AnimateIntoView";
+import IntroTitle from "@organisms/IntroTitle/IntroTitle";
 import RootLayout from "@templates/RootLayout/RootLayout";
 
-import IntroTitle from "@organisms/IntroTitle/IntroTitle";
 import Head from "next/head";
 
 export default function Home() {
@@ -15,8 +16,13 @@ export default function Home() {
       <main>
         <RootLayout>
           <IntroTitle>
-            <IntroTitle.Title>LUKE BRANNAGAN</IntroTitle.Title>
-            <IntroTitle.Subtitle>FRONTEND DEVELOPER</IntroTitle.Subtitle>
+            <IntroTitle.Title>
+              LUKE <br /> BRANNAGAN
+            </IntroTitle.Title>
+            <AnimateIntoView once={false} inViewVariant={{ y: 30 }}>
+              <IntroTitle.Subtitle>FRONTEND DEVELOPER</IntroTitle.Subtitle>
+            </AnimateIntoView>
+            <IntroTitle.Video src="/videos/splash.mp4" autoPlay muted loop />
           </IntroTitle>
         </RootLayout>
       </main>
