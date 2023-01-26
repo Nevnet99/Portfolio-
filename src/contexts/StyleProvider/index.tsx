@@ -2,13 +2,13 @@ import GlobalStyles from "@styles/globalStyles";
 import theme from "@styles/theme";
 import { ThemeProvider } from "styled-components";
 
-function MasterProvider({ children }) {
+function StyleProvider({ isStory, children }) {
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
+      <GlobalStyles isStory={isStory} />
       {children}
     </ThemeProvider>
   );
 }
 
-export default MasterProvider;
+export default StyleProvider;

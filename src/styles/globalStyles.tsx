@@ -23,7 +23,8 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    background: ${({ theme: { colors } }) => colors.background};
+    background: ${({ theme: { colors }, isStory }) =>
+      !isStory && colors.background};
     color: ${({ theme: { colors } }) => colors.text};
     padding: 0 ${({ theme: { spacing } }) => spacing(20)};
 

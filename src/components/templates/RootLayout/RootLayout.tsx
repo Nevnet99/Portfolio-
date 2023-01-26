@@ -1,6 +1,8 @@
+import Navigation from "@organisms/Navigation/Navigation";
 import Lenis from "@studio-freight/lenis";
 
 import { useEffect } from "react";
+import { Wrapper } from "./RootLayout.styled";
 
 function RootLayout({ children }) {
   useEffect(() => {
@@ -31,7 +33,12 @@ function RootLayout({ children }) {
     requestAnimationFrame(raf);
   }, []);
 
-  return <div>{children}</div>;
+  return (
+    <>
+      <Navigation />
+      <Wrapper>{children}</Wrapper>
+    </>
+  );
 }
 
 export default RootLayout;

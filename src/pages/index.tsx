@@ -17,14 +17,14 @@ export default function Home() {
         <RootLayout>
           <IntroTitle>
             <IntroTitle.Title>
-              <AnimateIntoView once={false}>
+              <AnimateIntoView>
                 LUKE <br /> BRANNAGAN
               </AnimateIntoView>
             </IntroTitle.Title>
             <AnimateIntoView once={false} inViewVariant={{ y: 30 }}>
               <IntroTitle.Subtitle>FRONTEND DEVELOPER</IntroTitle.Subtitle>
             </AnimateIntoView>
-            <IntroTitle.Video src="/videos/splash.mp4" autoPlay muted loop />
+            <IntroTitle.Video src="/videos/splash4.mp4" autoPlay muted loop />
           </IntroTitle>
         </RootLayout>
       </main>

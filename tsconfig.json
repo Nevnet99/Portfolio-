@@ -43,12 +43,16 @@
       "@organisms/*": [
         "src/components/organisms/*"
       ],
+      "@stories/*": [
+        "src/components/stories/*"
+      ],
       "@services/*": [
         "src/services/*"
       ],
       "@styles/*": [
         "src/styles/*"
       ],
+     
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

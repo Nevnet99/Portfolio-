@@ -1,3 +1,7 @@
+
+import StyleProvider from "@contexts/StyleProvider";
+import React from "react";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +11,13 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+  (Story) => (
+    <div style={{position: "relative"}}>
+      <StyleProvider isStory>
+        <Story />
+      </StyleProvider>
+    </div>
+  ),
+];
