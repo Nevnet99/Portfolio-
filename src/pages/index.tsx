@@ -17,7 +17,9 @@ export default function Home() {
         <RootLayout>
           <IntroTitle>
             <IntroTitle.Title>
-              LUKE <br /> BRANNAGAN
+              <AnimateIntoView once={false}>
+                LUKE <br /> BRANNAGAN
+              </AnimateIntoView>
             </IntroTitle.Title>
             <AnimateIntoView once={false} inViewVariant={{ y: 30 }}>
               <IntroTitle.Subtitle>FRONTEND DEVELOPER</IntroTitle.Subtitle>
