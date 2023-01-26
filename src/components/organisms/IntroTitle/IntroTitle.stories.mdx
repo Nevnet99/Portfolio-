@@ -1,0 +1,24 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import IntroTitle from "./IntroTitle";
+
+<Meta title="3. Organisms / C-001 IntroTitle" component={IntroTitle} />
+
+# Intro Title
+
+Intro Title is a component that displays the top of the index page and consists of a title and a subtitle.
+
+<Canvas>
+  <Story name="default" withSource="open">
+    <IntroTitle>
+      <IntroTitle.Title>
+        <AnimateIntoView>
+          LUKE <br /> BRANNAGAN
+        </AnimateIntoView>
+      </IntroTitle.Title>
+      <AnimateIntoView once={false} inViewVariant={{ y: 30 }}>
+        <IntroTitle.Subtitle>FRONTEND DEVELOPER</IntroTitle.Subtitle>
+      </AnimateIntoView>
+      <IntroTitle.Video src="/videos/splash4.mp4" autoPlay muted loop />
+    </IntroTitle>
+  </Story>
+</Canvas>
