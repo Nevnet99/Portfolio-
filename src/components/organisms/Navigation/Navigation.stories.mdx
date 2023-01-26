@@ -1,0 +1,27 @@
+<!-- Checkbox.stories.mdx -->
+
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import Navigation from "./Navigation";
+import ScrollDecorator from "@stories/ScrollDecorator/ScrollDecorator";
+
+<Meta
+  title="3. Organisms / C-002 Navigation"
+  component={Navigation}
+  decorators={[
+    (Story) => (
+      <ScrollDecorator>
+        <Story />
+      </ScrollDecorator>
+    ),
+  ]}
+/>
+
+# Navigation
+
+Navigation component used across the site.
+
+<Canvas>
+  <Story name="default" withSource="open">
+    <Navigation />
+  </Story>
+</Canvas>
