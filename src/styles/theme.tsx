@@ -52,11 +52,15 @@ const theme: Theme = {
 
     const typographyValues = {
       "large-title": `
-        font-size: ${theme.fontSize(180)};
+        font-size: 4rem; 
         font-weight: 900;
         font-family: 'Satoshi', sans-serif;
         letter-spacing: 0.05rem;
         line-height: 1;
+
+        ${theme.minBp("tablet")} {
+          font-size: ${theme.fontSize(180)};
+        }
       `,
       "secondary-title": `
         font-size: ${theme.fontSize(128)};
@@ -64,11 +68,15 @@ const theme: Theme = {
         font-family: 'Satoshi', sans-serif;
       `,
       "tertiary-title": `
-        font-size: ${theme.fontSize(98)};
+        font-size: 3.125rem;
         font-weight: 900;
         font-family: 'Satoshi Black', sans-serif;
         letter-spacing: 0.2rem;
         line-height: 1;
+
+        ${theme.minBp("tablet")} {
+          font-size:  ${theme.fontSize(98)};
+        }
       `,
       "body-title": `
         font-size: ${theme.fontSize(64)};
@@ -81,7 +89,7 @@ const theme: Theme = {
         font-family: 'Satoshi Black', sans-serif;
       `,
       "body-text": `
-        font-size: ${theme.fontSize(36)};
+        font-size: ${theme.fontSize(26)};
         font-weight: 300;
         font-family: 'Zodiak Regular', sans-serif;
       `,

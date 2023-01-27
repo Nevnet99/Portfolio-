@@ -20,7 +20,7 @@ export const Video = styled.video`
   top: 0;
   left: 0;
   z-index: -1;
-  max-height: 108px;
+  max-height: 102px;
   object-fit: cover;
   width: 100%;
 

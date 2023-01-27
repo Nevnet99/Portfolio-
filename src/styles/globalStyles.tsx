@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    font-size: 30%;
+    font-size: 80%;
 
     ${({ theme }) => theme.minBp("tablet")} {
         font-size: 55%;

@@ -1,4 +1,6 @@
 import AnimateIntoView from "@animations/AnimateIntoView/AnimateIntoView";
+import RandomGlow from "@animations/RandomGlow/RandomGlow";
+import About from "@organisms/About/About";
 import IntroTitle from "@organisms/IntroTitle/IntroTitle";
 import RootLayout from "@templates/RootLayout/RootLayout";
 
@@ -26,6 +28,26 @@ export default function Home() {
             </AnimateIntoView>
             <IntroTitle.Video src="/videos/splash4.mp4" autoPlay muted loop />
           </IntroTitle>
+          <AnimateIntoView once={false}>
+            <About>
+              <About.Image src="/img/profile.jpeg" />
+              <About.Content>
+                My name is Luke, and I am a{" "}
+                <RandomGlow>front-end developer </RandomGlow> with{" "}
+                <RandomGlow>4 years </RandomGlow> of experience. I specialise in
+                building <RandomGlow>modern, responsive websites </RandomGlow>{" "}
+                and web applications.
+                <br />
+                <br />I am passionate about creating{" "}
+                <RandomGlow>intuitive and engaging user experiences</RandomGlow>
+                , and I believe that{" "}
+                <RandomGlow>clean, well-designed code </RandomGlow> is the key
+                to achieving this. I am constantly learning and staying
+                up-to-date with the latest technologies and{" "}
+                <RandomGlow>best practices </RandomGlow> in the industry.
+              </About.Content>
+            </About>
+          </AnimateIntoView>
         </RootLayout>
       </main>
     </>
