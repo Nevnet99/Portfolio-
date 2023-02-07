@@ -9,6 +9,15 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+    default: "dark",
+    values: [
+      {
+        name: "dark",
+        value: "#000",
+      },
+    ],
+  },
   viewport: {
     viewports: [
       {

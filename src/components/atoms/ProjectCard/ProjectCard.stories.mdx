@@ -1,0 +1,26 @@
+import { Meta, Story } from "@storybook/addon-docs";
+import { ProjectCard } from ".";
+
+<Meta
+  title="Atoms/ProjectCard"
+  decorators={[
+    (Story) => (
+      <div style={{ width: "80vw", margin: "0 auto" }}>
+        <Story />
+      </div>
+    ),
+  ]}
+/>
+
+# ProjectCard
+
+## Examples
+
+<Story name="default">
+  <ProjectCard
+    image="https://via.placeholder.com/900x700"
+    title="Harwoods"
+    description="Ecommerce Nextjs build"
+    type="Automotive industry"
+  />
+</Story>
