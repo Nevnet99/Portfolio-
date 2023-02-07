@@ -1,9 +1,10 @@
 import AnimateIntoView from "@animations/AnimateIntoView/AnimateIntoView";
 import RandomGlow from "@animations/RandomGlow/RandomGlow";
+import projects from "@mocks/projects.json";
 import About from "@organisms/About/About";
 import IntroTitle from "@organisms/IntroTitle/IntroTitle";
+import Projects from "@organisms/Projects/Projects";
 import RootLayout from "@templates/RootLayout/RootLayout";
-
 import Head from "next/head";
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
               </About.Content>
             </About>
           </AnimateIntoView>
+          <Projects projects={projects} />
         </RootLayout>
       </main>
     </>
